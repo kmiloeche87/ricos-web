@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICO'S CUSTOM CARS - Tampa's Personalized Auto & Truck Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .brand-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1530046339160-ce3e5b0c7a2f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .accent-border {
+            border-left: 4px solid #ef4444;
+        }
+
+        .btn-action {
+            background-color: #ef4444;
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-action:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px #ef4444;
+        }
+
+        /* Ajuste para que el logo siempre se vea bien */
+        .main-logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass py-3 px-6 flex justify-between items-center border-b border-white/5">
+        <div class="flex items-center">
+            <a href="#">
+                <!-- Integración del Logo Fase 1 Punto 4 -->
+                <img src="logo.png" alt="Rico's Custom Cars" class="main-logo">
+            </a>
+        </div>
+        <div class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-widest text-gray-400">
+            <a href="#towing" class="hover:text-red-500 transition-colors">Grúa & Descuento</a>
+            <a href="#filosofia" class="hover:text-red-500 transition-colors">Nuestra Filosofía</a>
+            <a href="#servicios" class="hover:text-red-500 transition-colors">Especialidades</a>
+            <a href="#contacto" class="hover:text-red-500 transition-colors">Ubicación</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="tel:7274608361" class="text-red-500 font-bold hidden sm:block">
+                <i class="fas fa-phone-alt mr-2"></i> (727) 460-8361
+            </a>
+            <a href="#servicios" class="btn-action px-5 py-2 rounded-md font-bold text-[10px] uppercase tracking-tighter">
+                Solicitar Cita
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex items-center justify-start px-6 md:px-20 hero-bg relative overflow-hidden">
+        <div class="max-w-3xl z-10">
+            <div class="flex items-center space-x-2 mb-6">
+                <span class="bg-red-600 text-white text-[10px] px-3 py-1 rounded-full font-black uppercase tracking-widest italic">Tampa, FL</span>
+                <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Trato Directo y Personalizado</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-[0.9] italic uppercase">
+                Mecánica <br><span class="text-red-600 text-6xl md:text-8xl">A TU MEDIDA.</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-xl font-light border-l-2 border-red-600 pl-6">
+                En Rico's no eres un número más. Somos un taller boutique en Tampa donde cada vehículo es supervisado personalmente por nuestro mecánico principal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="tel:7274608361" class="btn-action px-8 py-4 rounded-lg font-black text-lg uppercase italic text-center shadow-lg shadow-red-600/20">
+                    <i class="fas fa-phone-alt mr-2"></i> Llamar al Taller
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=7401+altaloma+Tampa+fl" target="_blank" class="glass px-8 py-4 rounded-lg font-black text-lg uppercase italic border-red-600/30 hover:bg-red-600/10 text-center">
+                    <i class="fas fa-directions mr-2"></i> Cómo Llegar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Towing Strategy - 50% Strategy -->
+    <section id="towing" class="py-16 px-6 bg-red-600 text-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-black mb-6 italic uppercase leading-tight">¿Varado en el camino?</h2>
+                <p class="text-lg font-medium mb-8 opacity-95">Traer tu vehículo a reparar no debería costarte una fortuna. Tenemos una solución inteligente para tu bolsillo.</p>
+                <div class="flex items-center space-x-4 bg-black/10 p-5 rounded-2xl border border-white/20">
+                    <i class="fas fa-percent text-3xl"></i>
+                    <div>
+                        <p class="font-bold uppercase text-sm tracking-widest">50% DE DESCUENTO EN GRÚA</p>
+                        <p class="text-xs opacity-80 mt-1 uppercase tracking-tighter">Al realizar cualquier reparación mecánica en nuestro taller. Te ayudamos a volver a la ruta por menos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3">
+                <div class="bg-black/20 p-8 rounded-3xl border border-white/10 text-center">
+                    <p class="text-[10px] uppercase font-bold tracking-widest mb-2 text-white/70 italic">Beneficio de Cliente</p>
+                    <p class="text-5xl font-black mb-4">GRÚA AL 50%</p>
+                    <p class="text-xs italic mb-6 leading-tight">Válido para remolque local hacia Rico's Custom Cars al contratar tu servicio mecánico.</p>
+                    <a href="tel:7274608361" class="block w-full bg-black text-white py-4 rounded-xl font-bold uppercase text-sm hover:scale-105 transition-transform">
+                        <i class="fas fa-truck-pickup mr-2"></i> Solicitar Remolque
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofía Boutique -->
+    <section id="filosofia" class="py-24 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-5xl font-black italic uppercase mb-16 text-red-600">Calidad sobre Cantidad</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="p-4">
+                <i class="fas fa-user-check text-4xl mb-6 text-gray-500"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Atención Uno a Uno</h3>
+                <p class="text-gray-400 font-light leading-relaxed text-sm">Hablas directamente con quien repara tu vehículo. Sin intermediarios, con explicaciones claras.</p>
+            </div>
+            <div class="p-4 border-x border-white/5">
+                <i class="fas fa-microchip text-4xl mb-6 text-gray-500"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Diagnóstico Honesto</h3>
+                <p class="text-gray-400 font-light leading-relaxed text-sm">Nuestra prioridad es tu seguridad. No vendemos reparaciones innecesarias.</p>
+            </div>
+            <div class="p-4">
+                <i class="fas fa-wrench text-4xl mb-6 text-gray-500"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Mano de Obra de Autor</h3>
+                <p class="text-gray-400 font-light leading-relaxed text-sm">Cada trabajo es verificado personalmente por el mecánico principal antes de ser entregado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Especializados -->
+    <section id="servicios" class="py-24 px-6 bg-zinc-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-black italic uppercase mb-8 leading-none">Especialistas en<br><span class="text-red-600">Carga Pesada.</span></h2>
+                    <p class="text-gray-400 mb-10 font-light italic">Entendemos el valor de una tractomula para un dueño-operador independiente. Cuidamos tu herramienta de trabajo como si fuera nuestra.</p>
+                    <div class="space-y-4">
+                        <div class="glass p-5 rounded-2xl accent-border">
+                            <h4 class="font-bold uppercase text-sm mb-1 text-red-500 italic">Mecánica Diesel</h4>
+                            <p class="text-xs text-gray-500">Motores, sistemas de aire y diagnósticos electrónicos especializados.</p>
+                        </div>
+                        <div class="glass p-5 rounded-2xl accent-border">
+                            <h4 class="font-bold uppercase text-sm mb-1 text-red-500 italic">Custom Cars & Autos</h4>
+                            <p class="text-xs text-gray-500">Mantenimiento preventivo y modificaciones personalizadas de alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="glass p-10 rounded-[3rem] border-red-600/20">
+                        <h3 class="text-2xl font-black mb-8 italic uppercase text-center">Reserva tu Espacio</h3>
+                        <form id="bookingForm" onsubmit="handleBooking(event)" class="space-y-6">
+                            <select id="vehicleType" class="w-full bg-white/5 border-b border-white/20 py-4 focus:border-red-600 outline-none brand-font text-xs uppercase" onchange="updateServices()">
+                                <option value="car" class="bg-black">Auto / SUV / Custom</option>
+                                <option value="truck" class="bg-black">Tractomula / Camión</option>
+                            </select>
+                            <select id="serviceSelect" class="w-full bg-white/5 border-b border-white/20 py-4 focus:border-red-600 outline-none brand-font text-xs uppercase">
+                                <option class="bg-black">Diagnóstico General</option>
+                                <option class="bg-black">Mantenimiento Preventivo</option>
+                            </select>
+                            <input type="text" required class="w-full bg-transparent border-b border-white/20 py-4 focus:border-red-600 outline-none uppercase font-bold text-xs" placeholder="Tu Nombre">
+                            <input type="tel" required class="w-full bg-transparent border-b border-white/20 py-4 focus:border-red-600 outline-none font-bold text-xs" placeholder="Teléfono: (727) 460-8361">
+                            <button type="submit" class="w-full btn-action py-5 rounded-xl font-black uppercase tracking-widest italic shadow-xl shadow-red-600/10">
+                                Solicitar Cita
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="py-16 border-t border-white/5 bg-black px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left items-center">
+            <div>
+                <div class="flex items-center justify-center md:justify-start mb-6">
+                    <img src="logo.png" alt="Rico's Logo" class="h-16 w-auto">
+                </div>
+                <p class="text-gray-500 text-[10px] uppercase tracking-widest font-bold">Un taller de familia en Tampa, Florida.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <h4 class="font-bold text-red-600 uppercase text-xs tracking-[0.3em]">Ubicación</h4>
+                <p class="text-gray-300 font-bold">7401 Altaloma Tampa, FL.</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=7401+altaloma+Tampa+fl" target="_blank" class="inline-block text-xs font-bold uppercase tracking-widest text-red-500 hover:underline">
+                    <i class="fas fa-map-marked-alt mr-2"></i> Ver en Google Maps / Waze
+                </a>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-red-600 uppercase text-xs tracking-[0.3em]">Atención Directa</h4>
+                <p class="text-white font-black text-2xl tracking-tighter">(727) 460-8361</p>
+                <a href="tel:7274608361" class="btn-action px-6 py-3 rounded-xl inline-flex items-center space-x-2">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="font-bold uppercase text-[10px] tracking-widest">Llamar Ahora</span>
+                </a>
+            </div>
+        </div>
+        <div class="mt-16 text-center text-[10px] text-gray-700 uppercase tracking-[0.5em]">
+            &copy; 2026 Rico's Custom Cars - Quality Over Quantity
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/95 z-[100] hidden items-center justify-center p-6">
+        <div class="glass p-10 rounded-[3rem] max-w-sm w-full text-center border border-red-600/50">
+            <div class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-3xl">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3 class="text-xl font-black mb-4 uppercase italic">Solicitud Recibida</h3>
+            <p class="text-gray-400 mb-8 text-sm font-light">Confirmaremos tu espacio vía telefónica o WhatsApp.</p>
+            <button onclick="closeModal()" class="w-full btn-action py-4 rounded-xl font-bold uppercase text-xs">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function updateServices() {
+            const vType = document.getElementById('vehicleType').value;
+            const sSelect = document.getElementById('serviceSelect');
+            if(vType === 'truck') {
+                sSelect.innerHTML = `
+                    <option class="bg-black">Motores Diesel / Air Systems</option>
+                    <option class="bg-black">Diagnóstico de Computadora</option>
+                    <option class="bg-black">Mantenimiento de Carga Pesada</option>
+                `;
+            } else {
+                sSelect.innerHTML = `
+                    <option class="bg-black">Diagnóstico Computarizado</option>
+                    <option class="bg-black">Mantenimiento Preventivo</option>
+                    <option class="bg-black">Personalización y Custom</option>
+                `;
+            }
+        }
+
+        function handleBooking(e) {
+            e.preventDefault();
+            document.getElementById('successModal').classList.remove('hidden');
+            document.getElementById('successModal').classList.add('flex');
+            e.target.reset();
+        }
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('flex');
+        }
+    </script>
+</body>
+</html>
